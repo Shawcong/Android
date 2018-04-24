@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xcong.eatfish">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/l1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoadActivity"
+            android:launchMode="singleTask" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask" android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".GameActivity"
+            android:launchMode="singleTask" android:screenOrientation="landscape"
+          ></activity>
+    </application>
+
+
+</manifest>
