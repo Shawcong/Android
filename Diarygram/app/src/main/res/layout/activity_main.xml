@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:background="#FFFAF4">
+        <!-- 添加一个ListView控件 -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_alignParentBottom="true"
+        android:layout_height="70dp"
+        android:layout_width="fill_parent"
+        android:background="#FFFAF4"
+        android:id="@+id/bar"
+        >
+        <!--月份框旁边的矩形-->
+        <View android:id="@+id/rec"
+            android:background="#000000"
+            android:layout_width="5dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            />
+        <!--选项的矩形-->
+        <View android:id="@+id/selectsign"
+            android:layout_height="15dp"
+            android:layout_width="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:background="#000000"
+            android:layout_alignParentRight="true"
+            />
+        <!--月份框-->
+        <xcong.diarygram10.CustomFontTextView android:id="@+id/month"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/rec"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="September"
+            />
+
+        <!--月份框旁边的竖线-->
+        <View android:id="@+id/vline1"
+            android:background="#000000"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_toRightOf ="@+id/month"
+            android:layout_centerVertical="true"
+            />
+
+        <!--年份-->
+        <xcong.diarygram10.CustomFontTextView android:id="@+id/year"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/vline1"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="2016"
+            />
+
+        <!--年份框旁边的竖线-->
+        <View android:id="@+id/vline2"
+            android:background="#000000"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_toRightOf ="@+id/year"
+            android:layout_centerVertical="true"
+            />
+
+        <!--加号-->
+        <TextView android:id="@+id/addsign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="+"
+            />
+
+        <!--加号右边的竖线-->
+        <View android:id="@+id/vline3"
+            android:background="#000000"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="151dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+        <!--选项左边的图案-->
+        <View android:id="@+id/changesign"
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            android:background="#000000"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="72dp"
+            android:layout_alignParentRight="true"
+            />
+        <View android:id="@+id/changesignline1"
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_marginTop="30dp"
+            android:layout_alignLeft="@+id/changesign"
+            />
+        <View android:id="@+id/changesignline2"
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_marginTop="39dp"
+            android:layout_alignLeft="@+id/changesign"
+            />
+
+    </RelativeLayout>
+
+    <ListView android:id="@+id/diaryview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:layout_above="@+id/bar"
+            />
+
+</RelativeLayout>
